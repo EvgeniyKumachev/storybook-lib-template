@@ -1,6 +1,6 @@
 import React from 'react';
 import * as ReactDOM from 'react-dom';
-import { Default as Block } from '../stories/Block.stories';
+import { Default as Block } from './Block.stories';
 
 describe('Block', () => {
   it('renders without crashing', () => {

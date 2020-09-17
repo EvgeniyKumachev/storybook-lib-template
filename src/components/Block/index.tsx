@@ -1,11 +1,14 @@
-import React, { FC, HTMLAttributes, ReactChild } from 'react';
+import React, { HTMLAttributes } from 'react';
 
 import { BlockWrapper } from './styled';
 
 export interface BlockProps extends HTMLAttributes<HTMLDivElement> {
-  children?: ReactChild;
+  /**
+   * Test doc prop
+   */
+  testProp?: string;
 }
 
-export const Block: FC<BlockProps> = ({ children }) => {
-  return <BlockWrapper>{children}</BlockWrapper>;
+export const Block: React.FC<BlockProps> = ({ children, ...props }) => {
+  return <BlockWrapper {...props}>{children}</BlockWrapper>;
 };
