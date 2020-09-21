@@ -22,7 +22,7 @@
     "prepare": "tsdx build",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "deploy-storybook": "npx storybook-to-ghpages"
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "peerDependencies": {
     "@emotion/css": ">=11.0.0",
@@ -57,6 +57,7 @@
     "@storybook/preset-typescript": "^3.0.0",
     "@storybook/react": "^6.0.10",
     "@storybook/source-loader": "^6.0.10",
+    "@storybook/storybook-deployer": "^2.8.6",
     "@testing-library/dom": "^7.24.2",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.0.4",
