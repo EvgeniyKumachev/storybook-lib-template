@@ -1,3 +1,9 @@
-export const theme = {} as const;
+import type { Theme } from 'theme-ui'
+import { merge } from 'theme-ui'
 
-export type Theme = typeof theme;
+import { defaultTheme } from './theme'
+
+export const createTheme = (overrides: Theme = {}) =>
+  merge(overrides, defaultTheme)
+
+export { defaultTheme }

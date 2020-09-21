@@ -18,28 +18,29 @@
     "build": "tsdx build",
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint src types",
+    "lint-fix": "tsdx lint --fix src types",
     "prepare": "tsdx build",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "deploy-storybook": "storybook-to-ghpages"
   },
   "peerDependencies": {
+    "@emotion/css": ">=11.0.0",
+    "@emotion/react": ">=11.0.0",
+    "@emotion/styled": ">=11.0.0",
     "react": ">=16",
-    "styled-components": ">=5.1.0"
+    "theme-ui": ">=0.4.0"
   },
   "husky": {
     "hooks": {
       "pre-commit": "tsdx lint"
     }
   },
-  "prettier": {
-    "printWidth": 80,
-    "semi": true,
-    "singleQuote": true,
-    "trailingComma": "es5"
-  },
   "devDependencies": {
     "@babel/core": "^7.11.6",
+    "@emotion/css": "^11.0.0-next.17",
+    "@emotion/react": "^11.0.0-next.10",
+    "@emotion/styled": "^11.0.0-next.17",
     "@storybook/addon-actions": "^6.0.21",
     "@storybook/addon-docs": "^6.0.21",
     "@storybook/addon-links": "^6.0.21",
@@ -49,16 +50,28 @@
     "@types/react": "^16.9.49",
     "@types/react-dom": "^16.9.8",
     "@types/styled-components": "^5.1.3",
+    "@typescript-eslint/eslint-plugin": "^4.1.1",
+    "@typescript-eslint/parser": "^4.1.1",
     "babel-jest": "^26.3.0",
     "babel-loader": "^8.1.0",
+    "csstype": "^3.0.3",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-config-react-app": "^5.2.1",
+    "eslint-config-typescript": "^3.0.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-simple-import-sort": "^5.0.3",
     "husky": "^4.3.0",
+    "prettier": "^2.1.2",
     "react": "^16.13.1",
     "react-docgen-typescript-loader": "^3.7.2",
     "react-dom": "^16.13.1",
     "react-is": "^16.13.1",
-    "styled-components": "^5.2.0",
+    "theme-ui": "^0.4.0-rc.5",
     "ts-jest": "^26.3.0",
     "ts-loader": "^8.0.3",
+    "ts-toolbelt": "^8.0.6",
     "tsdx": "^0.13.3",
     "tslib": "^2.0.1",
     "typescript": "^4.0.2"

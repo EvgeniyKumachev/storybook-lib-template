@@ -1,3 +1,8 @@
 {
+  "npm.packageManager": "yarn",
   "eslint.packageManager": "yarn",
+  "editor.codeActionsOnSave": {
+    "eslint.fixAll": true
+  },
+  "typescript.tsdk": "node_modules/typescript/lib"
 }
