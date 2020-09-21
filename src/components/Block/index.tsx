@@ -1,8 +1,7 @@
-import React, { HTMLAttributes } from 'react'
+import React from 'react'
+import { Box, BoxOwnProps } from '@theme-ui/components'
 
-import { BlockWrapper } from './styled'
-
-export interface BlockProps extends HTMLAttributes<HTMLDivElement> {
+export interface BlockProps extends BoxOwnProps {
   /**
    * Test doc prop
    */
@@ -10,5 +9,5 @@ export interface BlockProps extends HTMLAttributes<HTMLDivElement> {
 }
 
 export const Block: React.FC<BlockProps> = ({ children, ...props }) => {
-  return <BlockWrapper {...props}>{children}</BlockWrapper>
+  return <Box {...props}>{children}</Box>
 }
