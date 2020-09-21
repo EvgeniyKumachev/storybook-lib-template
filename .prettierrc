@@ -5,6 +5,5 @@
   "bracketSpacing": true,
   "jsxBracketSameLine": false,
   "semi": false,
-  "tabWidth": 2,
-  "parser": "typescript"
+  "tabWidth": 2
 }

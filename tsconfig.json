@@ -18,6 +18,8 @@
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
     "moduleResolution": "node",
     "baseUrl": "./",
     "paths": {
